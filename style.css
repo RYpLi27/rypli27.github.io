@@ -57,7 +57,7 @@ a{color:inherit}
 /* about */
 .about{display:flex;gap:2.5rem;align-items:flex-start;border-top:1px solid var(--line)}
 .about p{max-width:68ch;margin-bottom:.8rem;color:#cfd5e3}
-.avatar{width:300px;height:300px;border-radius:50%;object-fit:cover;border:2px solid var(--accent);flex-shrink:0;background:#12161f}
+.avatar{width:400px;height:400px;border-radius:50%;object-fit:cover;border:2px solid var(--accent);flex-shrink:0;background:#12161f}
 .contact{border-top:1px solid var(--line)}
 
 
