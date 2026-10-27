@@ -47,7 +47,7 @@ const PROJECTS = [
     tools: ["Unity (URP)", "FMOD", "Shader Graph", "Reaper"], 
     role: "Audio Designer and VFX artist", 
     responsibilities: ["VFX", "Tech Art", "Audio Design", "Music Composition"], 
-    gallery: ["assets/video/Aura.mp4"], 
+    gallery: ["assets/video/Aura.gif"], 
     versions: []
   }
 ];
