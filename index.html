@@ -3,43 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zbigniew "RYpLi" Janasek Portfolio</title>
+  <title>Zbigniew &quot;RYpLi&quot; Janasek . Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <video id="bg-video" autoplay muted loop playsinline>
-    <source src="assets/video/background.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <div class="overlay"></div>
-
-  <header class="hero">
-    <h1>Zbigniew "RYpLi" Janasek</h1>
-    <p class="tagline">Unity Developer • Audio Designer • Music Composer • Gameplay Programmer • Shaders &amp; VFX</p>
+  <header class="topbar">
+    <a class="brand" href="#home"><strong>Zbigniew &quot;RYpLi&quot; Janasek</strong><span>Game Developer</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <main class="about">
-    <img class="avatar" src="assets/icons/Avatar.png" alt="Portrait">
-    <div class="about-text">
-      <h2>Unity Developer</h2>
-      <p>I’m a Unity developer leading the technical side of projects – engine work, systems implementation, and music production. I build clean, scalable gameplay systems and production tools. I also ensure high audio quality and clarity by mastering and mixing track levels, lighting, and post-processing, and I optimize shaders keep gameplay stable and smooth.</p>
 
-      <ul class="skills">
-        <li>Unity (URP)</li>
-        <li>C# Gameplay</li>
-        <li>Node Canvas (BT/FSM)</li>
-        <li>Tooling / Pipelines</li>
-        <li>Shader Graph</li>
-        <li>Sound Design</li>
-        <li>Real-time VFX</li>
-        <li>Music Composition</li>
-        <li>FMOD</li>
-      </ul>
 
-      <p class="focus">Currently focused on clear project architecture, consistent naming, and well-fitted soundscape across projects.</p>
-    </div>
-  </main>
+  <!-- ===== MAIN PAGE ===== -->
+  <div id="main-view">
+    <section id="home" class="hero">
+      <video autoplay muted loop playsinline>
+        <source src="assets/video/background.mp4" type="video/mp4">
+      </video>
+      <div class="hero-shade"></div>
+      <div class="hero-text">
+        <h1>Zbigniew &quot;RYpLi&quot; Janasek</h1>
+        <p>Unity Developer • Music Composer • Gameplay Programmer • Shaders &amp; VFX</p>
+      </div>
+    </section>
 
+    </section>
+
+    <section id="about" class="section about">
+      <img class="avatar" src="assets/icons/Avatar.png" alt="Portrait">
+      <div>
+        <h2>Unity Developer • Audio Designer • Music Composer</h2>
+        <p>I’m a Unity developer leading the technical side of projects – engine work, systems implementation, and team coordination. I build clean, scalable gameplay systems and production tools. I also ensure high visual quality by setting up environments, lighting, and post-processing, and I compose songs to fit gameplay of the projects I've been in.</p>
+        <ul class="chips">
+          <li>Unity (URP)</li><li>C# Gameplay</li><li>Level Design</li><li>Github synchronization</li>
+          <li>Shader Graph</li><li>Sound Design</li><li>Real-time VFX</li><li>Music Composition</li><li>FMOD</li>
+        </ul>
+        <p class="muted">Currently focused on clear project architecture, consistent naming, and well-defined quality soundscape across projects.</p>
+      </div>
+    </section>
+
+    <section id="highlights" class="section wide">
+      <div class="carousel" id="carousel"></div>
+    </section>
+
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid" id="project-grid"></div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+      <p class="muted">Linki:</p>
+      <p><a href="mailto:zjanasek27@email.com">zjanasek27@email.com</a> · <a href="https://github.com/RYpLi27">GitHub</a> · <a href="https://www.linkedin.com/in/zbigniew-janasek-579a1b350/">LinkedIn</a> </p>
+    </section>
+  </div>
+
+  <!-- ===== PROJECT DETAIL PAGE ===== -->
+  <main id="project-view" hidden></main>
+
+  <script src="projects.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
